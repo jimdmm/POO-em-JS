@@ -50,10 +50,7 @@
             </div>
             <div class="lineinput">
                 <label>Observações</label>
-                <br>
-                <textarea id="observacoes" 
-          rows="5" cols="33">
-            </textarea>
+                <input type="text" id="observacoes" >
             </div>
             <button onclick="cliente.salvar()">Salvar</button>
             <button onclick="cliente.cancelar()">Cancelar</button>    
@@ -71,7 +68,7 @@
                     <th>Observações</th>
                     <th>Ações</th>
                 </thead>
-                <tbody>
+                <tbody id="tbody">
 
                </tbody>
             </table>
