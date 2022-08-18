@@ -19,6 +19,7 @@ class Cliente{
 
     listaTabela() {
         let tbody = document.getElementById('tbody');
+        tbody.innerText = '';
 
         for(let i = 0; i < this.arrayCliente.length; i++ ) {
             let tr = tbody.insertRow();
@@ -31,6 +32,15 @@ class Cliente{
             let td_endereco = tr.insertCell();
             let td_observacoes = tr.insertCell();
             let td_acoes = tr.insertCell();
+
+            td_id.innerText = this.arrayCliente[i].id;
+            td_nome.innerText = this.arrayCliente[i].nomeCompleto;
+            td_cpf.innerText = this.arrayCliente[i].cpf;
+            td_genero.innerText = this.arrayCliente[i].genero;
+            td_telefone.innerText = this.arrayCliente[i].telefone;
+            td_endereco.innerText = this.arrayCliente[i].endereco;
+            td_observacoes.innerText = this.arrayCliente[i].observacoes;
+            
 
         }
     }
