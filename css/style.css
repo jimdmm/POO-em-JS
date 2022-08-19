@@ -4,11 +4,11 @@
 
 body{
     font-family: sans-serif;
-    background-color: rgb(161, 160, 160);;
+    background-color: rgb(161, 160, 160);
 }
 
 .container {
-    max-width: 100vw;;
+    max-width: 100vw;
     background: #cccfd1;
     display: flex;
     flex-direction: row;
