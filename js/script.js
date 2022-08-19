@@ -146,7 +146,7 @@ class Cliente {
 
     deletar(id) {
 
-        if (confirm('Deseja realmente deletar o cliente' + id)) {
+        if (confirm('Deseja realmente deletar o cliente?')) {
             let tbody = document.getElementById('tbody');
 
             for (let i = 0; i < this.arrayCliente.length; i++) {
