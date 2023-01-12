@@ -18,62 +18,58 @@
     <header>
         <h1>Cadastro de Cliente</h1>
     </header>
+    
     <main>
-        </div>
-        <div class="container">
-            <div class="title">
-                <h2>Clientes</h2>
-                <span>Lista de clientes cadastrados</span>
-        <div class="card">
-            <div class="lineinput">
-                <label>Nome Completo</label>
-                <input type="text" id="nome" placeholder="digite o seu nome completo">
+        H/
+                <div class="card">
+                    <div class="lineinput">
+                        <label>Nome Completo</label>
+                        <input type="text" id="nome" placeholder="digite o seu nome completo">
+                    </div>
+                    <div class="lineinput">
+                        <label>CPF</label>
+                        <input type="text" id="cpf" placeholder="digite o seu CPF">
+                    </div>
+                    <div class="lineinput">
+                        <label>Gênero</label>
+                        <select id="genero">
+                            <option>Masculino</option>
+                            <option>Feminino</option>
+                        </select>
+                    </div>
+                    <div class="lineinput">
+                        <label>Telefone</label>
+                        <input type="text" id="telefone" placeholder="Digite seu telefone">
+                    </div>
+                    <div class="lineinput">
+                        <label>Endereço</label>
+                        <input type="text" id="endereco" placeholder="Digite seu endereço">
+                    </div>
+                    <div class="lineinput">
+                        <label>Observações</label>
+                        <input type="text" id="observacoes" >
+                    </div>
+                    <button onclick="cliente.salvar()" id="btn1">Salvar</button>
+                    <button onclick="cliente.cancelar()">Cancelar</button>    
+                </div>
+                <div class="content">
+                    <table border="1">
+                        <thead>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>CPF</th>
+                            <th>Gênero</th>
+                            <th>Telefone</th>
+                            <th>Endereço</th>
+                            <th>Observações</th>
+                            <th>Ações</th>
+                        </thead>
+                        <tbody id="tbody">
+        
+                       </tbody>
+                    </table>
+                </div>
             </div>
-            <div class="lineinput">
-                <label>CPF</label>
-                <input type="text" id="cpf" placeholder="digite o seu CPF">
-            </div>
-            <div class="lineinput">
-                <label>Gênero</label>
-                <select id="genero">
-                    <option>Masculino</option>
-                    <option>Feminino</option>
-                </select>
-            </div>
-            <div class="lineinput">
-                <label>Telefone</label>
-                <input type="text" id="telefone" placeholder="Digite seu telefone">
-            </div>
-            <div class="lineinput">
-                <label>Endereço</label>
-                <input type="text" id="endereco" placeholder="Digite seu endereço">
-            </div>
-            <div class="lineinput">
-                <label>Observações</label>
-                <input type="text" id="observacoes" >
-            </div>
-            <button onclick="cliente.salvar()" id="btn1">Salvar</button>
-            <button onclick="cliente.cancelar()">Cancelar</button>    
-        </div>
-
-        <div class="content">
-            <table border="1">
-                <thead>
-                    <th>ID</th>
-                    <th>Nome</th>
-                    <th>CPF</th>
-                    <th>Gênero</th>
-                    <th>Telefone</th>
-                    <th>Endereço</th>
-                    <th>Observações</th>
-                    <th>Ações</th>
-                </thead>
-                <tbody id="tbody">
-
-               </tbody>
-            </table>
-        </div>
-
         </div>
     </main>
 </body>
