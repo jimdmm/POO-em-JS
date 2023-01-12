@@ -1,17 +1,20 @@
 *{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
+body, html{
     font-family: sans-serif;
     background-color: #cccfd1;
 }
 
+main {
+    max-width: 1024px;
+    margin: 0 auto;
+}
 .container {
-    max-width: 100vw;
-    background: #cccfd1;
-    display: flex;
-    flex-direction: row;
+    display: grid;
     justify-content: center;
     align-items: center;
 }    
@@ -29,9 +32,9 @@ header{
     background-color: #fff;
     border: 1px solid #ccc;
     padding: 20px;
-    margin-top: 15px;
+    margin: 30px auto;
     border-radius: 5px;
-    width: 500px;
+    width: 600px;
 
 }
 
@@ -73,10 +76,18 @@ table{
 table th{
     background-color: rgb(23, 143, 103);
     color: #fff;
+    padding: 5px 10px;
 }
 table td{
     padding: 0 20px;
 }
 table td img{
-    width: 40px;
+    width: 50px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+table td img:hover{
+    width: 65px;
+    transition: 0.5s;
 }
